@@ -87,7 +87,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="80" width="286" height="80"/>
+                                    <rect key="frame" x="16" y="80" width="286" height="43"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v99-HG-KbL">
@@ -104,6 +104,24 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Sa-YR-KqK"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9H-K3-fgB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="71" y="131" width="231" height="40"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTh-xV-cmg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="131" width="56" height="40"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +131,8 @@
                                 <exclude reference="EWW-az-dRv"/>
                                 <exclude reference="Vvu-kG-Sv3"/>
                                 <exclude reference="v99-HG-KbL"/>
+                                <exclude reference="M9H-K3-fgB"/>
+                                <exclude reference="KTh-xV-cmg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +142,8 @@
                                 <include reference="EWW-az-dRv"/>
                                 <include reference="Vvu-kG-Sv3"/>
                                 <include reference="v99-HG-KbL"/>
+                                <include reference="M9H-K3-fgB"/>
+                                <include reference="KTh-xV-cmg"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,6 +152,7 @@
                         <outlet property="enterNameTextField" destination="U3d-G7-X0w" id="gep-HH-NWw"/>
                         <outlet property="mailButton" destination="v99-HG-KbL" id="Vdk-a0-K8s"/>
                         <outlet property="messageLabel" destination="Vvu-kG-Sv3" id="pJJ-rU-4US"/>
+                        <outlet property="nameLabel" destination="M9H-K3-fgB" id="34V-hy-3tm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
